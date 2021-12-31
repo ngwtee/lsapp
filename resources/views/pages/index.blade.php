@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{config('app.name', 'LSAPP')}}</title>
-</head>
-<body>
-    <h1> Hello on index</h1>
-    <p>This is the laravel series</p>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+<div class="p-5 mb-4 bg-secondary rounded-3 text-center">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold"> {{$title}}</h1>
+        <p>This is the laravel series</p>
+        <p><a class="btn btn-primary btn-lg " type="button" href="/login" role="button"> Login </a><a class="btn btn-success btn-lg" href="/register"role="button"> Regiser </a></p>
+    </div>
+</div>
+
+@endsection
