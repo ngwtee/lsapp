@@ -21,4 +21,5 @@ Route::get('/services', 'PagesController@services');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::put('/posts/p','PostsController@store');
 Route::resource('posts', 'PostsController');
